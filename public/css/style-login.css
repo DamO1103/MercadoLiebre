@@ -1,0 +1,25 @@
+main {
+    text-align: center;
+    padding-bottom:20px;
+    padding-top: 20px;
+}
+.div{
+       padding-bottom: 20px; 
+}
+
+.input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.enviar {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 5px;
+    background-color: blue;
+    color: white;
+}

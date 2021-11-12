@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: "roboto";
+}
+
+.buscador {
+    height: 30px;
+    border-radius: 5px;
+    border:0px;
+    width: 150px;
+}
+.header {
+    background-color: #EAC926;
+    padding: 15px;
+}
+
+.top-header{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.logo-header {
+    width:200px;
+}
+
+.input-header{
+display:block;
+margin: auto;
+}
+
+.copy-header {
+    text-align:center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#lupa {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+}
+.fa-search{
+display:block;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.fas {
+    font-size: 12px;
+}
+
+.fa-bars {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-size: 25px;
+}
+
+
+.burger-menu {
+    max-width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin:auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align:center;
+}
+
+.navbar {
+    display: none;
+
+}
+.banner {
+    max-width:100%;
+}
+h4{
+    font-size: 24px;
+    text-align: left;
+    color: #666;
+    padding: 15px;
+}
+
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: green;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+.icono-footer {
+    text-align:center;
+}
+
+.fa-gift{
+    font-size:2em;
+    color: blue;
+}
+.fa-user-shield{
+    font-size:2em;
+    color: blue;
+}
+.fa-credit-card{
+    font-size:2em;
+    color: blue;
+}
+
+main {
+    background-color: #ebebeb;
+    
+}
+
+
+section div article {
+    position: relative;
+}
+main section div article i{
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+bottom: 30px;
+}
+
+.seccion-main {
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.seccion-main div {
+    text-align:left;
+    padding: 15px 0 10px 0px;
+    border-top: solid 1px #ebebeb;
+    margin: 10px 5px 0px 5px;
+  
+}
+
+.fa-truck {
+    color: green;
+}
+
+.seccion-main article {
+    background-color: white;
+    margin-bottom: 10px;
+    
+}
+
+.seccion-main h2 {
+    display:none;
+}
+img {
+    max-width: 90%;
+}
+
+.seccion-footer {
+    max-width: 96%;
+    margin:auto;
+}
+
+.seccion-footer div {
+    text-align: center;
+}
+
+.seccion-footer p{
+    text-align: center;
+}
+
+.seccion-footer article {
+    background-color: white;
+    padding: 30px 0;
+
+}
+
+@media (min-width: 768px) {
+    .top-header {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar ul{
+        display: flex;
+        
+    }
+    
+    .navbar ul li{
+        color: black;
+    }
+    .navbar li{
+        padding: 0 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-header, .navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .navbar li{
+        padding: 0 12px;
+    }
+    .copy-header {
+        max-width: none;
+        text-align: right;
+    }
+
+}
+
+@media (min-width: 361px) {
+
+    main section div article i{
+        
+        position: absolute;
+        right: 20px;
+        bottom: 50px;
+        }
+
+    .seccion-main h2 {
+         display:flex;
+    }
+    .seccion-main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .seccion-main-div{
+        display:flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .seccion-main-div article {
+        width: 50%;
+}
+
+}
+
+@media (min-width: 769px) {
+    .seccion-main-div{
+        display:flex; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .seccion-main-div article {
+        width: 25%;
+    }
+}

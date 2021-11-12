@@ -1,0 +1,44 @@
+.main-input {
+    width: 90%;
+    border-radius: 5px;
+    border:0px;
+    height: 30px;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.form1-div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.intereses-div {
+    padding-top: 15px;
+}
+.intereses-div div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+.comp-vend {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-button {
+    width: 90%;
+    border-radius: 5px;
+    height: 30px;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 5px;
+    background-color: white;
+    margin-bottom:10px;
+    
+}
