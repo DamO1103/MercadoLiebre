@@ -310,6 +310,25 @@ img {
         }
 }
 
+@media (min-width: 1024px) {
+    main form div .input {
+        width: 50%;
+        height: 30px;
+        border-radius: 5px;
+        border: 0px;
+    }
+    
+    main form .enviar {
+        width: 50%;
+        height: 30px;
+        border-radius: 5px;
+        border: 0px;
+        margin-top: 5px;
+        background-color: blue;
+        color: white;
+    }
+}
+
 @media (min-width: 1200px) {
     
 
