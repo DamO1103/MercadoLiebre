@@ -12,21 +12,32 @@ body{
     height: 30px;
     border-radius: 5px;
     border:0px;
-    width: 150px;
+    width: 70%;
 }
 .header {
     background-color: #EAC926;
     padding: 15px;
 }
 
+
+
 .top-header{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
     font-size: 12px;
 }
 
+.form-header{
+    padding-top: 10px;
+    width:50%;
+    text-align: right;
+}
 
 .logo-header {
-    width:200px;
+    height: 50px; 
+    width:50%;
+    margin-bottom: 15px;
 }
 
 .input-header{
@@ -38,6 +49,7 @@ margin: auto;
     text-align:center;
     font-weight: 400;
     font-size: 16px;
+    margin: 15px 0px;
 }
 
 #lupa {
@@ -72,7 +84,7 @@ a{
     max-width: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: blue;
+    background-color: #03264C;
     color: white;
     display: block;
     margin:auto;
@@ -87,8 +99,13 @@ a{
     display: none;
 
 }
+
+.navbar ul li a {
+    color:black;
+}
 .banner {
     max-width:100%;
+    background-color: #ebebeb;
 }
 h4{
     font-size: 24px;
@@ -109,10 +126,12 @@ h4{
 
 .descripciones {
     font-size: 16px;
+    
 }
 
 .icono-footer {
     text-align:center;
+    
 }
 
 .fa-gift{
@@ -137,6 +156,7 @@ main {
 section div article {
     position: relative;
 }
+
 main section div article i{
 display: block;
 font-size: 16px;
@@ -148,12 +168,11 @@ background-color: #FFF;
 border-radius: 50%;
 position: absolute;
 right: 20px;
-bottom: 30px;
+bottom: 50px;
 }
 
 .seccion-main {
     max-width: 90%;
-    text-align: center;
     margin: auto;
 }
 
@@ -171,13 +190,11 @@ bottom: 30px;
 
 .seccion-main article {
     background-color: white;
-    margin-bottom: 10px;
+    margin: 10px 5px;
     
 }
 
-.seccion-main h2 {
-    display:none;
-}
+
 img {
     max-width: 90%;
 }
@@ -193,6 +210,7 @@ img {
 
 .seccion-footer p{
     text-align: center;
+    
 }
 
 .seccion-footer article {
@@ -201,15 +219,59 @@ img {
 
 }
 
+.icono-footer div {
+    width: 100px;
+    margin:auto;
+}
+
+@media (min-width: 361px) {
+
+    main section div article i{
+        
+        position: absolute;
+        right: 20px;
+        bottom: 70px;
+        }
+
+        
+
+   
+    .seccion-main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .seccion-main-div{
+        display:flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .seccion-main-div article {
+        width: 45%;
+}
+
+}
+
 @media (min-width: 768px) {
+
+    #lupa {
+        font-size: 20px;
+        position: relative;
+        right: 25px;
+        background-color: white;
+    }
+
     .top-header {
         display:flex;
         justify-content: space-between;
     }
+    .form-header{
+    text-align: center;
+    }
 
     .copy-header {
         max-width: 350px;
-        text-align: right;
+        text-align: left;
     }
 
     .burger-menu{
@@ -232,59 +294,83 @@ img {
     .navbar li{
         padding: 0 5px;
     }
+
+    main section div article i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 45px;
+        }
 }
 
 @media (min-width: 1200px) {
+    
+
+    .descripciones{
+        visibility: hidden;
+    }
+    
+    main section div article:hover h2.descripciones{
+        visibility: visible;
+    }
+
+
     .top-header, .navbar {
         max-width: 1200px;
         margin: auto;
     }
     .navbar li{
-        padding: 0 12px;
+        padding: 0 15px;
     }
     .copy-header {
         max-width: none;
-        text-align: right;
-    }
-
-}
-
-@media (min-width: 361px) {
-
-    main section div article i{
-        
-        position: absolute;
-        right: 20px;
-        bottom: 50px;
-        }
-
-    .seccion-main h2 {
-         display:flex;
-    }
-    .seccion-main article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        text-align: left;
+        padding-left: 70px;
     }
 
     .seccion-main-div{
         display:flex; 
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0;
     }
     .seccion-main-div article {
-        width: 50%;
+        width: 20%;
 }
+
+.seccion-main-div article {
+    width: 22%;
+}
+
+    main form input:hover .enviar {
+        background-color: red;
+    }
+
+    .seccion-footer {
+        display:flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+    }
+
+    .icono-footer{
+        width: 400px;
+    }
+    #parrafo-footer{
+        text-align: left;
+        width: 100%;
+    }
+
+    footer article div:hover .fas {
+        color: #39b54a;
+    }
 
 }
 
-@media (min-width: 769px) {
-    .seccion-main-div{
-        display:flex; 
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
-    }
-    .seccion-main-div article {
-        width: 25%;
-    }
-}
+
